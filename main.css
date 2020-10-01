@@ -91,7 +91,7 @@ nav header div img{
     max-width: 80vw;
     padding: 2rem 3rem;
     margin: 0 auto;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     border: 1px solid lightgray;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -102,7 +102,7 @@ nav header div img{
     padding: 0 2rem;
 }
 
-#no{
+#nopad{
     font-size: small;
     display: flex;
     align-items: center;
@@ -244,7 +244,7 @@ select{
     background-color: var(--primary-blue);
 }
 
-hr{
+#foothr{
     height: 0.8rem;
     margin-top: 2rem;
     margin-bottom: calc(-2rem - 1px);
@@ -356,7 +356,10 @@ nav header, .specialoff p, .address, footer a{
     }
     
     nav header{
-        position: sticky;
+        z-index: 100;
+        position: fixed;
+        right: 0;
+        left: 0;
         padding: 0.8rem 2rem;
     }
     
@@ -364,10 +367,12 @@ nav header, .specialoff p, .address, footer a{
         display: none;
     }
     .navintro{
-        height: 40vh;
+        height: 70vh;
+        padding: 1rem;
     }
     
     .navintro h1{
+        text-align: center;
         font-size: 1.5rem;
     }
     
@@ -386,17 +391,15 @@ nav header, .specialoff p, .address, footer a{
         margin: 1rem;
     }    
     
-    #no{
+    #nopad{
         grid-column: span 2;
     }
     #line{
         height: 1px;
-        margin-top: 0;
-        margin-bottom: 0;
         grid-column: span 2;
         display: flex;
-        color: rgba(9, 33, 73, 0.1);
-        background-color: rgba(9, 33, 73, 0.1);
+        margin: 0;
+        background-color: rgba(9, 33, 73, 0.2);
     }
     
     #no-rgt-bdr{
@@ -405,14 +408,6 @@ nav header, .specialoff p, .address, footer a{
     .safety{
         grid-template-columns: repeat(3, 1fr);
     }
-        
-    /* .safety img{
-        width: 5rem;
-    }
-    
-    .safety .safetyimg{
-        max-width: 3rem;
-    } */
     
     .galsection{
         margin-bottom: 2rem;
@@ -455,7 +450,7 @@ nav header, .specialoff p, .address, footer a{
     }
 
     #res-footer{
-        padding: 1rem;
+        padding: 2rem 1rem;
         color: var(--primary-brown);
         background-color: var(--primary-blue);
         display: block;
@@ -467,3 +462,39 @@ nav header, .specialoff p, .address, footer a{
     }
 }
 
+@media(max-width: 300px){
+    nav{
+        height: 50vh;
+    }
+ 
+    .pad{
+        margin-top: 0.8rem;
+        padding: 1rem;
+    }
+
+    .form{
+        max-width: 95vw;
+        padding: 0.8rem;
+        transform: translateY(-30px);
+    }
+
+    .form div{
+        padding: 0 1rem;
+        margin: 0.5rem;
+    }    
+    
+    .form label{
+        margin-bottom: 0.3rem;
+    }    
+
+    .gal-main h1, .gal-main p{
+        padding: 0 0.5rem;
+    }
+    .nature{
+        height: 350px;
+    }
+
+    .gal-img{
+        height: 250px;
+    }      
+}
