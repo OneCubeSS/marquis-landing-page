@@ -41,29 +41,30 @@ button{
     padding: 1rem 4rem;
 }
 
+.logo{
+    width: 4rem;
+}
+
 nav{
     height: 70vh;
     color: #fff;
     background: url('./imgs/nav.png') center center/cover no-repeat;
 }
 
-nav header{
+nav header,
+nav header div, 
+.navintro,
+#nopad,
+#foot-btn{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 4rem;
-    background-color: rgba(9, 33, 73, 0.8);
-}
-
-.logo{
-    width: 4rem;
-}
-
-nav header div{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+nav header{
+    justify-content: space-between;
+    padding: 0.8rem 4rem;
+    background-color: rgba(9, 33, 73, 0.8);
 }
 
 nav header div img{
@@ -73,10 +74,7 @@ nav header div img{
 
 .navintro{
     height: 50vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .navintro h1{
@@ -104,9 +102,6 @@ nav header div img{
 
 #nopad{
     font-size: small;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
 }
 
@@ -151,10 +146,6 @@ select{
 
 .safety .safetyimg{
     max-width: 3rem;
-}
-
-.galsection, .gallery{
-    margin-top: 1rem;
 }
 
 .gal-main{
@@ -222,16 +213,12 @@ select{
     color: #fff;
     position: absolute;
     top: 0;
-    left: 0%;
+    left: 0;
     right: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.specialoff, .specialoff p{
-    margin-top: 1rem;
 }
 
 .specialoff button{
@@ -242,6 +229,12 @@ select{
 .specialoff button:hover{
     color: #fff;
     background-color: var(--primary-blue);
+}
+
+.galsection, .gallery,
+.specialoff, .specialoff p,
+#res-footer div{
+    margin-top: 1rem;
 }
 
 #foothr{
@@ -286,29 +279,15 @@ nav header, .specialoff p, .address, footer a{
     margin-right: 0.4rem;
 }
 
-.footer-links{
+.footer-links,
+#privacy{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-#privacy{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#privacy a{
-    margin-right: 2rem;
-}
-
 #privacy a:first-child{
     border-right: 1px solid rgba(144, 118, 94, 0.2);
-}
-
-#foot-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #final{
@@ -318,10 +297,7 @@ nav header, .specialoff p, .address, footer a{
     background-color: var(--primary-brown);
 }
 
-#res-footer{
-    display: none;
-}
-
+#res-footer,
 #line{
     display: none;
 }
@@ -330,16 +306,20 @@ nav header, .specialoff p, .address, footer a{
     .pad{
         padding: 1rem 3rem;
     }
+
     .form{
         padding: 1rem;
     }
+
     .form div{
         padding: 0 1rem;
-    }    
+    }
+
     .footer-main{
         grid-template-columns: 1fr 2fr 2fr 1fr;
         gap: 0;
     }
+    
     nav header{
         padding: 0.8rem 3rem;
     }        
@@ -363,9 +343,13 @@ nav header, .specialoff p, .address, footer a{
         padding: 0.8rem 2rem;
     }
     
-    nav header div{
+    nav header div,
+    .none, hr,
+    .gal-detail .arrow,
+    .footer-main{
         display: none;
     }
+    
     .navintro{
         height: 70vh;
         padding: 1rem;
@@ -376,35 +360,35 @@ nav header, .specialoff p, .address, footer a{
         font-size: 1.5rem;
     }
     
-    .none{
-        display: none;
-    }
-    
     .form{
         max-width: 90vw;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
+        padding: .7rem;
     }
 
     .form div{
-        margin: 1rem;
+        padding: 0 .7rem;
+        margin: .5rem;
     }    
     
     #nopad{
         grid-column: span 2;
     }
+    
     #line{
         height: 1px;
         grid-column: span 2;
         display: flex;
-        margin: 0;
+        margin: .5rem 0;
         background-color: rgba(9, 33, 73, 0.2);
     }
     
     #no-rgt-bdr{
         border-right: none;
     }
+    
     .safety{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -414,9 +398,10 @@ nav header, .specialoff p, .address, footer a{
     }
 
     .gal-main{
+        text-align: center;
         transform: translateX(0);
     }
-        
+    
     .nature{
         width: 100%;
         height: 400px;
@@ -427,26 +412,24 @@ nav header, .specialoff p, .address, footer a{
         height: 300px;
         transform: translateX(calc(-100% - 1px)) translateY(50px);
     }
+
+    .gal-main h1{
+        padding: 0 .8rem;
+    }
     
-    .gal-detail {
-        width: 80%;
-        transform: translateX(10%) translateY(-100px) ;
+    .gal-main p{
+        padding: 0.5rem .8rem;
     }
         
-    .gal-detail .arrow{
-        display: none;
+    .gal-detail {
+        padding: .7rem;
+        grid-template-rows: 1fr;
+        width: 80%;
+        transform: translateX(10%) translateY(-80px) ;
     }
     
     .offer{
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    hr{
-        display: none;
-    }
-    
-    .footer-main{
-        display: none;
     }
 
     #res-footer{
@@ -456,9 +439,11 @@ nav header, .specialoff p, .address, footer a{
         display: block;
         text-align: center;
     }
+}
 
-    #res-footer div{
-        margin-top: 1rem;
+@media(max-width: 500px){
+    .gal-detail {
+        padding: .5rem 0;
     }
 }
 
@@ -468,28 +453,25 @@ nav header, .specialoff p, .address, footer a{
     }
  
     .pad{
-        margin-top: 0.8rem;
+        margin-top: .8rem;
         padding: 1rem;
     }
 
     .form{
-        max-width: 95vw;
-        padding: 0.8rem;
-        transform: translateY(-30px);
+        max-width: 94vw;
+        padding: .6rem;
     }
-
-    .form div{
-        padding: 0 1rem;
-        margin: 0.5rem;
-    }    
     
     .form label{
-        margin-bottom: 0.3rem;
+        margin-bottom: .3rem;
     }    
 
-    .gal-main h1, .gal-main p{
-        padding: 0 0.5rem;
+    .form div,
+    .gal-main h1, 
+    .gal-main p{
+        padding: 0 .5rem;
     }
+    
     .nature{
         height: 350px;
     }
