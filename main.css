@@ -287,16 +287,16 @@ select{
     align-items: center;
 }
 
-.offer img{
+/* .offer img{
     width: 400px;
     height: 600px;
-}
+} */
 .offer div{
     position: relative;
 }
 
 .offer div h1{
-    font-size: 70px;
+    font-size: 50px;
     background-color: rgba(0,0,0, 0.5);
     color: #fff;
     position: absolute;
@@ -479,6 +479,8 @@ nav header, .specialoff p, .address, footer a{
     #spoff{
         margin: 0 -2rem;
         min-width: 100vw;
+        width: 480px;
+        height: 336px;
     }
 }
 
