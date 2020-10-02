@@ -316,6 +316,7 @@ select{
 }
 .specialoff button{
     border: 1px solid var(--primary-blue);
+    background-color: #fff;
     color: var(--primary-blue);
 }
 
@@ -347,6 +348,7 @@ select{
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 2fr;
     gap: 1rem;
+    align-content: center;
 }
 
 footer a{
@@ -410,6 +412,7 @@ nav header, .specialoff p, .address, footer a{
     }
     
     .form{
+        min-width: 85vw;
         padding: 1rem;
     }
 
@@ -418,8 +421,8 @@ nav header, .specialoff p, .address, footer a{
     }
 
     .footer-main{
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-        gap: 0;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
     }
     
     nav header{
@@ -428,6 +431,10 @@ nav header, .specialoff p, .address, footer a{
     
     .gal-main{
         width: 100vw;
+    }
+    #spoff{
+        margin: 0 -2rem;
+        min-width: 100vw;
     }
 }
 
@@ -543,9 +550,6 @@ nav header, .specialoff p, .address, footer a{
         transform: translateX(10%) translateY(90%) ;
     }
  
-    #spoff{
-        padding: 0;
-    }
     .offer{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
@@ -569,6 +573,7 @@ nav header, .specialoff p, .address, footer a{
         text-align: center;
         margin-top: 1rem;
     }
+    
 }
 
 @media(max-width: 500px){
