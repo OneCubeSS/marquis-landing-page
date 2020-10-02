@@ -420,11 +420,15 @@ nav header, .specialoff p, .address, footer a{
 
     .form{
         max-width: 84%;
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
-        
+
+    .form div label, .form div button{
+        font-size: 16px;
+    }
+                
     .form div p{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .form div{
@@ -449,7 +453,6 @@ nav header, .specialoff p, .address, footer a{
     
     .form{
         max-width: 85%;
-        padding: 1rem;
     }
 
     .form div{
