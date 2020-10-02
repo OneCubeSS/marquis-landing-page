@@ -417,6 +417,25 @@ nav header, .specialoff p, .address, footer a{
         height: 350px;
         transform: translateX(90%);
     }
+
+    .form{
+        max-width: 84%;
+        padding: 1rem 2rem;
+    }
+        
+    .form div p{
+        font-size: 20px;
+    }
+    
+    .form div{
+        padding: 0 1.3rem;
+    }    
+    
+    .footer-main{
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+    }
+
 }
 
 @media(max-width: 900px){
