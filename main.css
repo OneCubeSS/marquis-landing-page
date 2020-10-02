@@ -429,7 +429,7 @@ nav header, .specialoff p, .address, footer a{
     }
     
     .form{
-        min-width: 85vw;
+        max-width: 85%;
         padding: 1rem;
     }
 
@@ -470,9 +470,6 @@ nav header, .specialoff p, .address, footer a{
         width: 100px;
         height: 100px;
     }
-    nav{
-        height: 90vh;
-    }
  
     button{
         font-size: 18px;
@@ -504,7 +501,7 @@ nav header, .specialoff p, .address, footer a{
     }
     
     .form{
-        max-width: 90vw;
+        max-width: 90%;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
@@ -627,18 +624,14 @@ nav header, .specialoff p, .address, footer a{
 
 }
 
-@media(max-width: 300px){
-    nav{
-        height: 50vh;
-    }
- 
+@media(max-width: 300px){ 
     .pad{
         margin-top: .8rem;
         padding: 1rem;
     }
 
     .form{
-        max-width: 94vw;
+        max-width: 94%;
         padding: .6rem;
     }
     
