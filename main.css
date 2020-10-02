@@ -99,7 +99,7 @@ nav header div img{
 }
 
 .navintro{
-    height: 50vh;
+    height: 50%;
     flex-direction: column;
     text-align: center;
     font-family: 'NewParisHeadline';
@@ -107,7 +107,7 @@ nav header div img{
 }
 
 .form{
-    max-width: 80vw;
+    max-width: 80%;
     padding: 2rem 3rem;
     margin: 0 auto;
     transform: translateY(-30px);
@@ -486,7 +486,7 @@ nav header, .specialoff p, .address, footer a{
         padding: 0 2rem;
     }
     
-    .none, hr,
+    .none,
     .gal-detail .arrow,
     .footer-main{
         display: none;
@@ -595,7 +595,12 @@ nav header, .specialoff p, .address, footer a{
         text-align: center;
         margin-top: 1rem;
     }
-    
+ 
+    #foothr{
+        height: .6rem;
+        margin-top: 1rem;
+        margin-bottom: calc(-1rem - 1px);
+    }   
 }
 
 @media(max-width: 500px){
